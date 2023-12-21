@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 30px;
+  margin-top: 100px;
+  gap: 40px;
+  width: 1000px;
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 1px solid black;
+  width: 50%;
+}
+
+.msg {
+  height: 400px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.msg p {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  overflow-x: auto;
+}
+.msg p.sent,
+.msg p.received {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.msg p.sent {
+  text-align: right;
+}
+
+.msg p.received {
+  text-align: left;
+}
+.panel {
+  height: 100px;
+  padding: 10px;
+}
+
+.control-button {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.control-button button {
+  margin: 0px 10px;
+  width: 80px;
+  height: 25px;
+}
+
+.send-msg {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.send-msg textarea {
+  margin: 10px;
+  width: 330px;
+  height: 55px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.send-msg button {
+  margin: 10px;
+  width: 70px;
+  height: 55px;
+}
+
+textarea {
+  font-style: normal;
+}

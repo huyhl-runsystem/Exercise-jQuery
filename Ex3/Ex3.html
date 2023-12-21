@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="Ex3.css" />
+    <title>Ex3</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chatbox left">
+        <div class="msg"></div>
+        <div class="panel">
+          <div class="control-button">
+            <button type="button" onclick="applyBold('bold','left')">
+              Đậm
+            </button>
+            <button type="button" onclick="applyItalic('italic','left')">
+              Nghiêng
+            </button>
+            <button type="reset" onclick="resetInput('left')">Reset</button>
+          </div>
+          <div class="send-msg">
+            <textarea name="message" id="leftMessage"></textarea>
+            <button type="button" onclick="sendMessage('left')">SEND</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chatbox right">
+        <div class="msg"></div>
+        <div class="panel">
+          <div class="control-button">
+            <button type="button" onclick="applyBold('bold','right')">
+              Đậm
+            </button>
+            <button type="button" onclick="applyItalic('italic','right')">
+              Nghiêng
+            </button>
+            <button type="reset" onclick="resetInput('right')">Reset</button>
+          </div>
+          <div class="send-msg">
+            <textarea name="message" id="rightMessage"></textarea>
+            <button type="button" onclick="sendMessage('right')">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="Ex3.js"></script>
+  </body>
+</html>
