@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="Ex1.css" />
+    <title>Exercise 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="infoForm" onsubmit="validateForm(event)">
+        <div class="info">
+          <label for="fullName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            maxlength="40"
+            required
+          />
+        </div>
+        <span class="error" id="fullNameError"></span>
+
+        <div class="info">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <span class="error" id="emailError"></span>
+
+        <div class="info">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <span class="error" id="phoneError"></span>
+
+        <div class="info">
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" required />
+        </div>
+        <span class="error" id="birthdayError"></span>
+
+        <div class="info">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <span class="error" id="passwordError"></span>
+
+        <div class="info">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
+        <span class="error" id="confirmPasswordError"></span>
+
+        <div class="avatar-upload" id="avatar-upload">
+          <input type="file" id="image-upload" name="image" />
+          <label for="image-upload" id="label-avatar-upload"
+            >Avatar Upload</label
+          >
+        </div>
+
+        <button type="submit" id="add-button">Add</button>
+        <button type="button" onclick="resetForm()">Reset</button>
+      </form>
+
+      <div id="saveDataForm">
+        <div>
+          <label for="displayFullName">Full Name:</label>
+          <p id="displayFullName"></p>
+        </div>
+        <div>
+          <label for="displayEmail">Email:</label>
+          <p id="displayEmail"></p>
+        </div>
+        <div>
+          <label for="displayPhone">Phone:</label>
+          <p id="displayPhone"></p>
+        </div>
+        <div>
+          <label for="displayBirthday">Birthday:</label>
+          <p id="displayBirthday"></p>
+        </div>
+        <div class="avatar-preview" id="avatar-preview">
+          <p id="image-preview">Avatar preview</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="Ex1.js"></script>
+  </body>
+</html>
